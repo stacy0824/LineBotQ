@@ -254,8 +254,9 @@ def getTaipei101LocationMessage():
 def getMRTVideoMessage():
     message = dict()
     message["type"] = "video"
-    message["originalContentUrl"]: "https://github.com/stacy0824/LineBotQ/blob/main/static/taipei_101_video.mp4"
-    message["previewImageUrl"]: "https://github.com/stacy0824/LineBotQ/blob/main/static/taipei_101_video.mp4"
+    message["originalContentUrl"] = "https://github.com/stacy0824/LineBotQ/blob/main/static/taipei_101_video.mp4"
+    message["previewImageUrl"] = "https://github.com/stacy0824/LineBotQ/blob/main/static/taipei_101_video.mp4"
+    message["trackingId"] = ""
 
     return message
 
