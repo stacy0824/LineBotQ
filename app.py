@@ -241,10 +241,10 @@ def getPlayStickerMessage1():
 def getTaipei101LocationMessage():
     message = dict()
     message["type"] = "location"
-    message["title"]: "台北101"
-    message["address"]: "No. 7, Section 5, Xinyi Road, Taipei City, Taiwan"
-    message["latitude"]: 25.033671
-    message["longitude"]: 121.564427
+    message["title"]= "台北101"
+    message["address"]= "No. 7, Section 5, Xinyi Road, Taipei City, Taiwan"
+    message["latitude"]= 25.033671
+    message["longitude"]= 121.564427
 
 
     return message
