@@ -74,6 +74,8 @@ def index():
                                   "type": "buttons",
                                   "title": "Menu",
                                   "text": "請選擇",
+                                   "imageAspectRatio": "rectangle",
+                                   "imageSize": "cover"
                                   "imageBackgroundColor": "#DEB887",
                                   "actions": [
                                       {
