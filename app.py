@@ -74,7 +74,7 @@ def index():
                                   "type": "buttons",
                                   "title": "Menu",
                                   "text": "請選擇",
-                                  "imageBackgroundColor": "#deb887",
+                                  "imageBackgroundColor": "#DEB887",
                                   "actions": [
                                       {
                                         "type": "message",
