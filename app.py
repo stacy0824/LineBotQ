@@ -48,7 +48,7 @@ def index():
                 elif text == "出去玩囉":
                     payload["messages"] = [getPlayStickerMessage(),getPlayStickerMessage1()]
                 elif text == "台北101":
-                    payload["messages"] = [getMRTVideoMessage()]
+                    payload["messages"] = [getMRTSoundMessage()]
 #                     [getTaipei101ImageMessage(),
 #                                            getTaipei101LocationMessage(),
 #                                            getMRTVideoMessage()]
@@ -254,9 +254,9 @@ def getTaipei101LocationMessage():
 def getMRTVideoMessage():
     message = dict()
     message["type"] = "video"
-    message["originalContentUrl"] = "https://github.com/stacy0824/LineBotQ/blob/main/static/taipei_101_video.mp4"
-    message["previewImageUrl"] = "https://github.com/stacy0824/LineBotQ/blob/main/static/taipei_101_video.mp4"
-    message["trackingId"] = ""
+    message["originalContentUrl"] = F"{end_point}/static/taipei_101_video.mp4"
+    message["previewImageUrl"] = F"{end_point}/main/static/taipei_101_video.mp4"
+    message["trackingId"] = "track-id"
 
     return message
 
