@@ -74,8 +74,8 @@ def index():
                                   "type": "buttons",
                                   "title": "Menu",
                                   "text": "請選擇",
-                                   "imageAspectRatio": "rectangle",
-                                   "imageSize": "cover"
+                                  "imageAspectRatio": "rectangle",
+                                  "imageSize": "cover",
                                   "imageBackgroundColor": "#DEB887",
                                   "actions": [
                                       {
@@ -91,7 +91,7 @@ def index():
                                       {
                                         "type": "uri",
                                         "label": "聯絡我",
-                                        "uri": "tel:0972062449"
+                                        "uri": "tel:0910546519"
                                       }
                                   ]
                               }
