@@ -73,7 +73,8 @@ def index():
                                 "template": {
                                   "type": "buttons",
                                   "title": "Menu",
-                                  "text": "Please select",
+                                  "text": "請選擇",
+                                  "imageBackgroundColor": "#deb887",
                                   "actions": [
                                       {
                                         "type": "message",
