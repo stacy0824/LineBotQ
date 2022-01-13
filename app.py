@@ -48,10 +48,9 @@ def index():
                 elif text == "出去玩囉":
                     payload["messages"] = [getPlayStickerMessage(),getPlayStickerMessage1()]
                 elif text == "台北101":
-                    payload["messages"] = [getMRTSoundMessage()]
-#                     [getTaipei101ImageMessage(),
-#                                            getTaipei101LocationMessage(),
-#                                            getMRTVideoMessage()]
+                    payload["messages"] = [getTaipei101ImageMessage(),
+                                           getTaipei101LocationMessage(),
+                                           getMRTVideoMessage()]
                 elif text == "扣打":
                     payload["messages"] = [
                             {
@@ -242,10 +241,10 @@ def getPlayStickerMessage1():
 def getTaipei101LocationMessage():
     message = dict()
     message["type"] = "location"
-    message["title"]: "my location"
-    message["address"]: "1-6-1 Yotsuya, Shinjuku-ku, Tokyo, 160-0004, Japan", 
-    message["latitude"]: 35.687574,
-    message["longitude"]: 139.72922
+    message["title"]: "台北101"
+    message["address"]: "No. 7, Section 5, Xinyi Road, Taipei City, Taiwan", 
+    message["latitude"]: 25.033671,
+    message["longitude"]: 121.564427
 
 
     return message
@@ -255,7 +254,7 @@ def getMRTVideoMessage():
     message = dict()
     message["type"] = "video"
     message["originalContentUrl"] = F"{end_point}/static/taipei_101_video.mp4"
-    message["previewImageUrl"] = F"{end_point}/main/static/taipei_101_video.mp4"
+    message["previewImageUrl"] = F"{end_point}/static/taipei_101_video.mp4"
     message["trackingId"] = "track-id"
 
     return message
