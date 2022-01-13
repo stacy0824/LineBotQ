@@ -209,8 +209,8 @@ def getLocationConfirmMessage(title, latitude, longitude):
     message["type"] = "template"
     message["altText"] = "this is a confirm template"
     data = {"title": title, "latitude": latitude, "longitude": longitude, "action": "get_near"}
-    message["template"] = {
-
+    message["template"] = {"type":"location",
+   "label":"Location"
     }
     return message
 
@@ -219,9 +219,14 @@ def getCallCarMessage(data):
     message = dict()
     message["type"] = "template"
     message["altText"] = "this is a confirm template"
-    message["template"] = {
-
-                      }
+    message["template"] = { "type":"datetimepicker",
+   "label":"Select date",
+   "data":"storeId=12345",
+   "mode":"datetime",
+   "initial":"2022-01-01t00:00",
+   "max":"2022-01-25t23:59",
+   "min":"2022-01-14t00:00"
+    }
     return message
 
 
