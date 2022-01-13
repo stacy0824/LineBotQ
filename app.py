@@ -225,7 +225,7 @@ def getCallCarMessage(data):
 def getPlayStickerMessage():
     message = dict()
     message["type"] = "sticker"
-    message["stickerId"] = ["1988","1989"]
+    message["stickerId"] = "1988"
     message["packageId"] = "446"
     return message
 
@@ -260,6 +260,8 @@ def getTaipei101ImageMessage(originalContentUrl=F"{end_point}/static/taipei_101.
 
 def getImageMessage(originalContentUrl):
     message = dict()
+    message["originalContentUrl"] = "https://web.ntnu.edu.tw/~498231299/homepage/homepage_Chance/picture/p2.jpg",
+    message["previewImageUrl"] =  "https://web.ntnu.edu.tw/~498231299/homepage/homepage_Chance/picture/p2.jpg"
 
     return message
 
